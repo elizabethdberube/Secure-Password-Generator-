@@ -25,21 +25,21 @@ function generatePassword() {
     }
     chars = "";
      
-    if (confirm("Would you like to use lowercase characters?")) {
+    if (confirm("Would you like to use lowercase characters? To proceed without lowercase characters select Cancel.")) {
       chars += "qwertyyuiopasdfghjklzxcvbnm";
 
     }
 
     // uppercase, numeric, and/or special characters
-    if (confirm("Would you like to use uppercase characters?")) {
+    if (confirm("Would you like to use uppercase characters? To proceed without uppercase characters select Cancel.")) {
       chars += "QWERTYUIOPASDFGHJKLZXCVBNM";
     }
 
-    if (confirm("Would you like to use numeric characters?")) {
+    if (confirm("Would you like to use numeric characters? To proceed without numeric characters select Cancel.")) {
       chars += "1234567890";
     }
 
-    if (confirm("Would you like to use special characters?")) {
+    if (confirm("Would you like to use special characters? To proceed without special characters select Cancel.")) {
       chars += "!#$%&'()*+,-./:;<=>?@[\]\"^_`{|}~";
     }
 
@@ -49,7 +49,7 @@ function generatePassword() {
   }
 
   var password = "";
-  for (var i = 0; i <= passwordLength; i++) {
+  for (var i = 1; i <= passwordLength; i++) {
     var randomNumber = Math.floor(Math.random() * chars.length);
     password += chars.substring(randomNumber, randomNumber + 1);
   }
