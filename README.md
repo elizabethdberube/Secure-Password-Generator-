@@ -1,4 +1,7 @@
 # Secure-Password-Generator-
+Modified starter code to create an application that generates random passwords for users. 
+
+Methods for improving code:
 
 1. Utilized if and return statements in conjunction with confirm, prompt and alert to make application usable for users. 
 2. Added password length parameters.
