@@ -7,7 +7,7 @@
 5. Added function for actual generation of password. 
 
 
-Link to page: 
+Link to page: https://elizabethdberube.github.io/Secure-Password-Generator-/
 
 
 ![image](/assets/Screenshot.png)
